@@ -4,22 +4,23 @@ class Product < ActiveRecord::Base
   serialize :product_keywords, Array
 
   attr_accessor :available_shipping_rates # these the the shipping rates per the shipping address on the order
-
+#
 #  searchable do
 #    text    :name, :default_boost => 2
 #    text      :product_keywords#, :multiple => true
 #    text      :description
 #    time      :deleted_at
 #  end
-  #Sunspot.setup(Rehab) do
-  #  text :addiction
+
+#  Sunspot.setup(Rehab) do
+ #   text :addiction
   #  integer :relapses
-  #  float :relapse_average
+   # float :relapse_average
   #  time :admitted_at
   #  string :cure do
   #    addiction.gsub(/(darkness|clouds|shadows)/, 'sunshine')
-  #  end
   #end
+#end
 
   belongs_to :product_type
   belongs_to :prototype
