@@ -86,6 +86,10 @@ group :test do
   #gem "redgreen"
   #gem "test-unit", "1.2.3"
 
+  group :production do
+    gem "memcache-client"
+    gem 'memcached-northscale', :require => 'memcached'
+  end
 
   ###  THESE ARE ALL FOR CUCUMBER
 #  gem "webrat"  ## USE webrat or capybara NOT BOTH
