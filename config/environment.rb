@@ -24,4 +24,3 @@ Paperclip.options[:command_path] = "/usr/local/bin"
 # Initialize the rails application
 Hadean::Application.initialize!
 
-config.cache_store = :mem_cache_store, Memcached::Rails.new
