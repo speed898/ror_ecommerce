@@ -78,5 +78,6 @@ Hadean::Application.configure do
     #  :login     => HADEAN_CONFIG['braintree']['login'],
     #  :password  => HADEAN_CONFIG['braintree']['password']
     #)
+    
   end
 end

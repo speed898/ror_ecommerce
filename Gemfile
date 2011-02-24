@@ -24,7 +24,9 @@ gem "jquery-rails"
 #gem 'ripple'
 #gem 'riak-sessions'
 
-gem 'dalli', '~> 1.0.0'
+group :production do
+  gem 'dalli', '~> 1.0.0'
+end
 
 gem 'nokogiri', '~> 1.4.4'
 gem 'memcache-client', '~> 1.8.5'
