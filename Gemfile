@@ -24,12 +24,11 @@ gem "jquery-rails"
 #gem 'ripple'
 #gem 'riak-sessions'
 
-group :production do
-  gem 'dalli', '~> 1.0.0'
-end
+gem 'dalli', '~> 1.0.2'
+
 
 gem 'nokogiri', '~> 1.4.4'
-gem 'memcache-client', '~> 1.8.5'
+#gem 'memcache-client', '~> 1.8.5'
 gem 'mysql2', '~> 0.2.6'
 #gem 'mysql', '2.8.1'
 #gem 'ruby-mysql'
