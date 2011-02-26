@@ -6,9 +6,9 @@ require 'action_dispatch/middleware/session/dalli_store'
 #Hadean::Application.config.session_store ::Ripple::SessionStore
 #Hadean::Application.config.session_store :mem_cache_store, :key => '_hadean_session'
 
-Hadean::Application.config.session_store :dalli_store, :key => '_hadean_session'
+#Hadean::Application.config.session_store :dalli_store, :key => '_hadean_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rake db:sessions:create")
-# Hadean::Application.config.session_store :active_record_store
+ Hadean::Application.config.session_store :active_record_store
